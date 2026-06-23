@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接貓咪遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="game-screen active">
+            <h1>接貓咪遊戲</h1>
+            <p>控制盤子接住掉落的貓咪</p>
+            <div class="cat-types">
+                <div class="cat-type">
+                    <span class="cat big-cat"><img src="images/big-cat.png" alt="大貓咪" class="cat-img"></span>
+                    <span>大貓咪：2 分</span>
+                </div>
+                <div class="cat-type">
+                    <span class="cat mid-cat"><img src="images/mid-cat.png" alt="中貓咪" class="cat-img"></span>
+                    <span>中貓咪：5 分</span>
+                </div>
+                <div class="cat-type">
+                    <span class="cat small-cat"><img src="images/small-cat.png" alt="小貓咪" class="cat-img"></span>
+                    <span>小貓咪：10 分</span>
+                </div>
+            </div>
+            <button id="start-btn">開始遊戲</button>
+        </div>
+
+        <div id="game-screen" class="game-screen">
+            <div id="score-board">
+                <div>得分： <span id="score">0</span></div>
+                <div>時間： <span id="time">60</span> 秒</div>
+            </div>
+
+            <div id="game-area">
+                <div id="plate"></div>
+            </div>
+
+            <div id="touch-controls">
+                <button id="left-btn">←</button>
+                <button id="right-btn">→</button>
+            </div>
+        </div>
+
+        <div id="game-over-screen" class="game-screen">
+            <h2>遊戲結束</h2>
+            <p>總得分： <span id="final-score">0</span></p>
+            <button id="restart-btn">重新開始</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
