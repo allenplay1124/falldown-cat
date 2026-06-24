@@ -200,6 +200,8 @@ function checkCollision(catElement, catType) {
         gameState.score += catType.points;
         elements.score.textContent = gameState.score;
 
+        new Audio('music/cat-mew.mp3').play();
+
         // 板子脈衝效果
         elements.plate.classList.add('plate-pulse');
         setTimeout(() => {
@@ -237,6 +239,8 @@ function checkAllCats() {
             // 接住貓咪
             gameState.score += catType.points;
             elements.score.textContent = gameState.score;
+
+            new Audio('music/cat-mew.mp3').play();
 
             // 板子脈衝效果
             elements.plate.classList.add('plate-pulse');

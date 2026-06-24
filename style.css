@@ -124,6 +124,7 @@ p {
 button {
     padding: 15px 40px;
     font-size: 1.2em;
+    font-family: inherit;
     background-color: #4A90E2;
     color: white;
     border: none;
